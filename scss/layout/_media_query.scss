@@ -1,6 +1,7 @@
 @media(max-width:500px) {
     .main_body {
         flex-direction: column;
+        height: auto;
     }
     .body_left {
         width: 100%;
@@ -8,6 +9,20 @@
     }
     .body_right {
         width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:800px) {
+    .main_body {
+        flex-direction: column;
+        height: auto;
+    }
+    .body_left {
+        width: 100%;
         height: 50vh;
+    }
+    .body_right {
+        width: 100%;
+        height: auto;
     }
 }
