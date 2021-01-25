@@ -1,0 +1,176 @@
+.main_body {
+    display: flex;
+    height: 100vh;
+}
+
+.body_left {
+    width: 50%;
+    background-color: orange;
+    position: relative;
+    .img_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        width: fit-content;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+}
+
+.body_right {
+    width: 50%;
+    background-color: #f1f1f1;
+}
+
+.card_component {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    .card_flex {
+        display: flex;
+        .card_icon  {
+            cursor: pointer;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            transition: 0.2s ease-in;
+            transition: 0.2s ease-out;
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+}
+
+.card_flex {
+    .card_git {
+        color: #333;
+        &:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+    }
+    .card_in {
+        color: #0A66C2;
+        &:hover {
+            background-color: #0A66C2;
+            color: #ffffff;
+        }
+    }
+    .card_fb {
+        color: #3A5794;
+        &:hover {
+            background-color: #3A5794;
+            color: #ffffff;
+        }
+    }
+
+}
+.skill_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_container {
+    width: 500px;
+    ul {
+        li {
+            list-style-type: none;
+            font-weight: bold;
+            position: relative;
+            margin: 20px 0;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 10px;
+                background-color: #ffffff;
+                top: calc(100% + 5px);
+                left: 0;
+                border-radius: 50px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 10px;
+                top: calc(100% + 5px);
+                left: 0;
+                border-radius: 50px;
+                width: 0%;
+                animation-duration: 2s;
+                // animation-delay: 1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+               
+                
+            }
+        }
+
+    }
+}
+.html::after {
+    animation-name: html;
+}
+.css::after {
+    animation-name: css;
+}
+.sass::after {
+    animation-name: sass;
+}
+.js::after {
+    animation-name: js;
+}
+.jq::after {
+    animation-name: jq;
+}
+.git::after {
+    animation-name: git;
+}
+@keyframes html {
+    to {
+        width: 90%;
+        background-color: orange;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes css {
+    to {
+        width: 70%;
+        background-color: rgb(126, 85, 223);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes sass{
+    to {
+        width: 60%;
+        background-color: rgb(133, 224, 30);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes js{
+    to {
+        width: 50%;
+        background-color: yellow;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes jq{
+    to {
+        width: 50%;
+        background-color: rgb(66, 30, 224);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+@keyframes git{
+    to {
+        width: 60%;
+        background-color: rgb(224, 30, 214);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}

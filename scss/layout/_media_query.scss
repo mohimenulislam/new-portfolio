@@ -1,0 +1,13 @@
+@media(max-width:500px) {
+    .main_body {
+        flex-direction: column;
+    }
+    .body_left {
+        width: 100%;
+        height: 50vh;
+    }
+    .body_right {
+        width: 100%;
+        height: 50vh;
+    }
+}
